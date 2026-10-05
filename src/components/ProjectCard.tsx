@@ -6,12 +6,19 @@ type ProjectCardProps = {
 
 function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <article>
-      <h3>{project.title.es}</h3>
-      <p>{project.summary.es}</p>
-      <ul>
+    <article className="flex flex-col rounded-lg border border-slate-200 p-6 dark:border-slate-700">
+      <h3 className="text-lg font-semibold">{project.title.es}</h3>
+      <p className="mt-3 flex-1 text-slate-700 dark:text-slate-300">
+        {project.summary.es}
+      </p>
+      <ul className="mt-6 flex flex-wrap gap-2">
         {project.technologies.map((technology) => (
-          <li key={technology}>{technology}</li>
+          <li
+            key={technology}
+            className="rounded-md bg-slate-100 px-2 py-1 font-mono text-xs text-slate-700 dark:bg-slate-800 dark:text-slate-300"
+          >
+            {technology}
+          </li>
         ))}
       </ul>
     </article>
