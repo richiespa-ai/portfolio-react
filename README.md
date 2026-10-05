@@ -1,32 +1,52 @@
-# React + TypeScript + Vite
+# Portfolio de Ricardo Español Rowe
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Portfolio personal construido con React y TypeScript. Presenta mi perfil, mis habilidades y mis proyectos de automatización de procesos e IA aplicada.
 
-Currently, two official plugins are available:
+Proyecto en desarrollo, dentro del Máster AI Maker & Automatizaciones (thePower Tech School).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Qué incluye
 
-## React Compiler
+- Presentación, sección "Sobre mí" y habilidades agrupadas por categoría.
+- Proyectos en tarjetas, con filtro acumulativo por tecnología.
+- Español e inglés, con selector de idioma.
+- Tema claro y oscuro: sigue la preferencia del sistema y recuerda la elección.
+- Descarga del CV en el idioma activo.
+- Diseño responsive.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## En construcción
 
-## Expanding the Oxlint configuration
+- Carga de proyectos con estados de espera y de error.
+- Detalle de cada proyecto en una ventana modal.
+- Formulario de contacto con validación.
+- Experiencia profesional y formación.
+- Publicación con dominio propio.
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Tecnologías
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+- React 19 y TypeScript
+- Vite
+- Tailwind CSS 4
+- Zustand, para el estado global (idioma y tema)
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Cómo ejecutarlo en local
+
+Hace falta tener Node.js instalado.
+
+    npm install
+    npm run dev
+
+La aplicación queda disponible en `http://localhost:5173`.
+
+## Estructura
+
+    src/
+      components/   Componentes de la interfaz
+      data/         Contenido: proyectos, habilidades y textos en los dos idiomas
+      lib/          Utilidades
+      store/        Estado global
+
+## Contacto
+
+- Web: [ricardoespanolrowe.com](https://www.ricardoespanolrowe.com)
+- LinkedIn: [linkedin.com/in/ricardo-español-rowe](https://www.linkedin.com/in/ricardo-espa%C3%B1ol-rowe/)
+- Correo: ricardo@ricardoespanolrowe.com
