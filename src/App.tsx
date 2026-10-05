@@ -7,10 +7,15 @@ import { useSettings } from "./store/settings";
 
 function App() {
   const language = useSettings((state) => state.language);
+  const theme = useSettings((state) => state.theme);
 
   useEffect(() => {
     document.documentElement.lang = language;
   }, [language]);
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", theme === "dark");
+  }, [theme]);
 
   return (
     <div className="min-h-screen bg-white font-sans text-slate-900 dark:bg-slate-950 dark:text-slate-100">

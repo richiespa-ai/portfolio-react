@@ -12,6 +12,8 @@ type Texts = {
   technologiesTitle: string;
   projectsTitle: string;
   noProjects: string;
+  lightMode: string;
+  darkMode: string;
 };
 
 export const texts: Record<Language, Texts> = {
@@ -29,6 +31,8 @@ export const texts: Record<Language, Texts> = {
     technologiesTitle: "Tecnologías",
     projectsTitle: "Proyectos",
     noProjects: "Ningún proyecto usa todas las tecnologías seleccionadas.",
+    lightMode: "Modo claro",
+    darkMode: "Modo oscuro",
   },
   en: {
     role: "AI Operations Specialist",
@@ -44,5 +48,7 @@ export const texts: Record<Language, Texts> = {
     technologiesTitle: "Technologies",
     projectsTitle: "Projects",
     noProjects: "No project uses all the selected technologies.",
+    lightMode: "Light mode",
+    darkMode: "Dark mode",
   },
 };
