@@ -1,11 +1,18 @@
+import About from "./components/About";
+import Hero from "./components/Hero";
 import ProjectGrid from "./components/ProjectGrid";
+import Skills from "./components/Skills";
 
 function App() {
   return (
-    <main>
-      <h1>Ricardo Español Rowe</h1>
-      <ProjectGrid />
-    </main>
+    <>
+      <Hero />
+      <main>
+        <About />
+        <Skills />
+        <ProjectGrid />
+      </main>
+    </>
   );
 }
 
