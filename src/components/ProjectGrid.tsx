@@ -2,7 +2,9 @@ import { useState } from "react";
 import ProjectCard from "./ProjectCard";
 import Section from "./Section";
 import { projects } from "../data/projects";
+import { texts } from "../data/texts";
 import { cn } from "../lib/utils";
+import { useSettings } from "../store/settings";
 
 const allTechnologies = [
   ...new Set(projects.flatMap((project) => project.technologies)),
@@ -10,6 +12,8 @@ const allTechnologies = [
 
 function ProjectGrid() {
   const [selected, setSelected] = useState<string[]>([]);
+  const language = useSettings((state) => state.language);
+  const t = texts[language];
 
   function toggleTechnology(technology: string) {
     setSelected((current) =>
@@ -24,7 +28,7 @@ function ProjectGrid() {
   );
 
   return (
-    <Section id="proyectos" title="Proyectos">
+    <Section id="proyectos" title={t.projectsTitle}>
       <div className="flex flex-wrap gap-2">
         {allTechnologies.map((technology) => {
           const isSelected = selected.includes(technology);
@@ -47,7 +51,7 @@ function ProjectGrid() {
       </div>
       {visibleProjects.length === 0 && (
         <p className="mt-8 text-slate-600 dark:text-slate-400">
-          Ningún proyecto usa todas las tecnologías seleccionadas.
+          {t.noProjects}
         </p>
       )}
       <div className="mt-8 grid gap-6 md:grid-cols-2">

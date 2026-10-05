@@ -5,6 +5,8 @@ import {
   technologies,
   type TechnologyLevel,
 } from "../data/skills";
+import { texts } from "../data/texts";
+import { useSettings } from "../store/settings";
 
 const levels: TechnologyLevel[] = ["produccion", "proyectos", "formacion"];
 
@@ -18,26 +20,29 @@ const levelStyles: Record<TechnologyLevel, string> = {
 };
 
 function Skills() {
+  const language = useSettings((state) => state.language);
+  const t = texts[language];
+
   return (
-    <Section id="habilidades" title="Habilidades">
+    <Section id="habilidades" title={t.skillsTitle}>
       <div className="grid gap-8 md:grid-cols-2">
         {competencies.map((competency) => (
           <div key={competency.id}>
-            <h3 className="font-semibold">{competency.category.es}</h3>
+            <h3 className="font-semibold">{competency.category[language]}</h3>
             <ul className="mt-3 space-y-1 text-slate-700 dark:text-slate-300">
-              {competency.items.es.map((item) => (
+              {competency.items[language].map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
           </div>
         ))}
       </div>
-      <h3 className="mt-12 font-semibold">Tecnologías</h3>
+      <h3 className="mt-12 font-semibold">{t.technologiesTitle}</h3>
       <div className="mt-4 space-y-4">
         {levels.map((level) => (
           <div key={level}>
             <h4 className="font-mono text-xs uppercase tracking-wider text-slate-500 dark:text-slate-400">
-              {levelLabels[level].es}
+              {levelLabels[level][language]}
             </h4>
             <ul className="mt-2 flex flex-wrap gap-2">
               {technologies
