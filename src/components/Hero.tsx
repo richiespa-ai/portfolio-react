@@ -1,4 +1,5 @@
 import LanguageToggle from "./LanguageToggle";
+import ThemeToggle from "./ThemeToggle";
 import { texts } from "../data/texts";
 import { useSettings } from "../store/settings";
 
@@ -9,7 +10,8 @@ function Hero() {
   return (
     <header className="border-b border-slate-200 dark:border-slate-700">
       <div className="mx-auto max-w-4xl px-6 pb-20 pt-6">
-        <div className="flex justify-end">
+        <div className="flex items-center justify-end gap-2">
+          <ThemeToggle />
           <LanguageToggle />
         </div>
         <p className="mt-14 font-mono text-sm text-accent dark:text-blue-400">
