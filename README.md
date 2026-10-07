@@ -42,6 +42,7 @@ El repositorio está preparado para trabajar con Claude Code:
   - `verificar`: comprobaciones antes de cada commit (tipos, linter, idiomas, contenido y README).
   - `.claude/agents/` contiene subagentes, que trabajan en su propio contexto y devuelven solo un informe:
   - `revisor-accesibilidad`: revisión de solo lectura de los componentes (nombres accesibles, etiquetas de formulario, jerarquía de títulos, idioma de la página y textos sin traducir). Devuelve cada problema con archivo, línea y severidad.
+  - `.claude/settings.json` define un hook: cada vez que Claude Code crea o edita un archivo, se le pasa Prettier de forma automática con el script `.claude/hooks/formatear.mjs`. Respeta lo excluido en `.prettierignore`.
 
 ## Cómo ejecutarlo en local
 
@@ -55,6 +56,7 @@ La aplicación queda disponible en `http://localhost:5173`.
 ## Estructura
 
     .claude/agents/   Subagentes de revisión para Claude Code
+    .claude/hooks/    Scripts que Claude Code ejecuta de forma automática
     .claude/skills/   Procedimientos para Claude Code
     public/
       cv/             CV en PDF, en español y en inglés
