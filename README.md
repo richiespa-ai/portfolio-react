@@ -2,7 +2,7 @@
 
 Portfolio personal construido con React y TypeScript. Presenta mi perfil, mi trayectoria y mis proyectos de automatización de procesos e IA aplicada.
 
-Proyecto del Máster AI Maker & Automatizaciones (thePower Tech School).
+Proyecto del Máster AI Maker & Automatizaciones (thePower Tech School). Desarrollado con asistencia de Claude (Anthropic).
 
 ## Qué incluye
 
@@ -31,6 +31,16 @@ Proyecto del Máster AI Maker & Automatizaciones (thePower Tech School).
 - TanStack Query, para la carga de datos
 - shadcn/ui sobre Base UI, para los componentes de interfaz
 
+## Trabajo con Claude Code
+
+El repositorio está preparado para trabajar con Claude Code:
+
+- `CLAUDE.md` describe el proyecto: stack, estructura, convenciones y reglas de contenido.
+- `.claude/skills/` contiene procedimientos escritos para las tareas que se repiten:
+  - `nuevo-componente`: crear un componente o una sección siguiendo las convenciones del proyecto.
+  - `nuevo-proyecto`: añadir un proyecto a la rejilla, solo con datos verificados.
+  - `verificar`: comprobaciones antes de cada commit (tipos, linter, idiomas, contenido y README).
+
 ## Cómo ejecutarlo en local
 
 Hace falta tener Node.js instalado.
@@ -42,6 +52,7 @@ La aplicación queda disponible en `http://localhost:5173`.
 
 ## Estructura
 
+    .claude/skills/   Procedimientos para Claude Code
     public/
       cv/             CV en PDF, en español y en inglés
       data/           Datos de los proyectos
