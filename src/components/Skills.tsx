@@ -12,7 +12,7 @@ const levels: TechnologyLevel[] = ["produccion", "proyectos", "formacion"];
 
 const levelStyles: Record<TechnologyLevel, string> = {
   produccion:
-    "border-accent bg-accent text-white dark:border-blue-500 dark:bg-blue-500 dark:text-slate-950",
+    "border-brand bg-brand text-white dark:border-blue-500 dark:bg-blue-500 dark:text-slate-950",
   proyectos:
     "border-slate-400 text-slate-800 dark:border-slate-500 dark:text-slate-200",
   formacion:

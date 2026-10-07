@@ -49,7 +49,7 @@ function ProjectGrid() {
         <button
           type="button"
           onClick={() => refetch()}
-          className="mt-4 cursor-pointer rounded-md border border-slate-300 px-4 py-2 font-semibold hover:border-accent hover:text-accent dark:border-slate-600 dark:hover:border-blue-400 dark:hover:text-blue-400"
+          className="mt-4 cursor-pointer rounded-md border border-slate-300 px-4 py-2 font-semibold hover:border-brand hover:text-brand dark:border-slate-600 dark:hover:border-blue-400 dark:hover:text-blue-400"
         >
           {t.retry}
         </button>
@@ -77,9 +77,9 @@ function ProjectGrid() {
               aria-pressed={isSelected}
               onClick={() => toggleTechnology(technology)}
               className={cn(
-                "cursor-pointer rounded-md border border-slate-300 px-3 py-1 font-mono text-sm hover:border-accent dark:border-slate-600 dark:hover:border-blue-400",
+                "cursor-pointer rounded-md border border-slate-300 px-3 py-1 font-mono text-sm hover:border-brand dark:border-slate-600 dark:hover:border-blue-400",
                 isSelected &&
-                  "border-accent bg-accent text-white dark:border-blue-500 dark:bg-blue-500 dark:text-slate-950",
+                  "border-brand bg-brand text-white dark:border-blue-500 dark:bg-blue-500 dark:text-slate-950",
               )}
             >
               {technology}

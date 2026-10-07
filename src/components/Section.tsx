@@ -12,7 +12,7 @@ function Section({ id, title, children }: SectionProps) {
       id={id}
       className="scroll-mt-8 border-b border-slate-200 py-16 dark:border-slate-700"
     >
-      <h2 className="font-mono text-sm uppercase tracking-widest text-accent dark:text-blue-400">
+      <h2 className="font-mono text-sm uppercase tracking-widest text-brand dark:text-blue-400">
         {title}
       </h2>
       <div className="mt-8">{children}</div>

@@ -14,7 +14,7 @@ function Hero() {
           <ThemeToggle />
           <LanguageToggle />
         </div>
-        <p className="mt-14 font-mono text-sm text-accent dark:text-blue-400">
+        <p className="mt-14 font-mono text-sm text-brand dark:text-blue-400">
           {t.role}
         </p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl">
@@ -26,14 +26,14 @@ function Hero() {
         <div className="mt-10 flex flex-wrap gap-4">
           <a
             href="#proyectos"
-            className="rounded-md bg-accent px-5 py-3 font-semibold text-white hover:bg-blue-800"
+            className="rounded-md bg-brand px-5 py-3 font-semibold text-white hover:bg-blue-800"
           >
             {t.viewProjects}
           </a>
           <a
             href={t.cvFile}
             download
-            className="rounded-md border border-slate-300 px-5 py-3 font-semibold hover:border-accent hover:text-accent dark:border-slate-700 dark:hover:border-blue-400 dark:hover:text-blue-400"
+            className="rounded-md border border-slate-300 px-5 py-3 font-semibold hover:border-brand hover:text-brand dark:border-slate-700 dark:hover:border-blue-400 dark:hover:text-blue-400"
           >
             {t.downloadCv}
           </a>

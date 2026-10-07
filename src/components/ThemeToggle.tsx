@@ -11,7 +11,7 @@ function ThemeToggle() {
     <button
       type="button"
       onClick={toggleTheme}
-      className="cursor-pointer rounded-md px-2 py-1 font-mono text-sm text-slate-600 hover:text-accent dark:text-slate-400 dark:hover:text-blue-400"
+      className="cursor-pointer rounded-md px-2 py-1 font-mono text-sm text-slate-600 hover:text-brand dark:text-slate-400 dark:hover:text-blue-400"
     >
       {theme === "dark" ? t.lightMode : t.darkMode}
     </button>

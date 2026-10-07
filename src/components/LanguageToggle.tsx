@@ -20,7 +20,7 @@ function LanguageToggle() {
           aria-pressed={language === option}
           onClick={() => setLanguage(option)}
           className={cn(
-            "cursor-pointer rounded-md px-2 py-1 uppercase text-slate-600 hover:text-accent dark:text-slate-400 dark:hover:text-blue-400",
+            "cursor-pointer rounded-md px-2 py-1 uppercase text-slate-600 hover:text-brand dark:text-slate-400 dark:hover:text-blue-400",
             language === option &&
               "bg-slate-100 text-slate-900 dark:bg-slate-800 dark:text-slate-100",
           )}
