@@ -4,6 +4,7 @@ import Contact from "./components/Contact";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
 import ProjectGrid from "./components/ProjectGrid";
 import Skills from "./components/Skills";
 import { useSettings } from "./store/settings";
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white font-sans text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+      <Navbar />
       <Hero />
       <main className="mx-auto max-w-4xl px-6 pb-24">
         <About />

@@ -1,5 +1,3 @@
-import LanguageToggle from "./LanguageToggle";
-import ThemeToggle from "./ThemeToggle";
 import { texts } from "../data/texts";
 import { useSettings } from "../store/settings";
 
@@ -8,13 +6,12 @@ function Hero() {
   const t = texts[language];
 
   return (
-    <header className="border-b border-slate-200 dark:border-slate-700">
-      <div className="mx-auto max-w-4xl px-6 pb-20 pt-6">
-        <div className="flex items-center justify-end gap-2">
-          <ThemeToggle />
-          <LanguageToggle />
-        </div>
-        <p className="mt-14 font-mono text-sm text-brand dark:text-blue-400">
+    <section
+      id="inicio"
+      className="border-b border-slate-200 dark:border-slate-700"
+    >
+      <div className="mx-auto max-w-4xl px-6 py-20">
+        <p className="font-mono text-sm text-brand dark:text-blue-400">
           {t.role}
         </p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl">
@@ -39,7 +36,7 @@ function Hero() {
           </a>
         </div>
       </div>
-    </header>
+    </section>
   );
 }
 
