@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Education from "./components/Education";
+import Experience from "./components/Experience";
 import Hero from "./components/Hero";
 import ProjectGrid from "./components/ProjectGrid";
 import Skills from "./components/Skills";
@@ -23,8 +25,10 @@ function App() {
       <Hero />
       <main className="mx-auto max-w-4xl px-6 pb-24">
         <About />
-        <Skills />
         <ProjectGrid />
+        <Experience />
+        <Skills />
+        <Education />
         <Contact />
       </main>
     </div>
