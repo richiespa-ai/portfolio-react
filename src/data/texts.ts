@@ -12,6 +12,9 @@ type Texts = {
   technologiesTitle: string;
   projectsTitle: string;
   noProjects: string;
+  loadingProjects: string;
+  projectsError: string;
+  retry: string;
   lightMode: string;
   darkMode: string;
 };
@@ -31,6 +34,9 @@ export const texts: Record<Language, Texts> = {
     technologiesTitle: "Tecnologías",
     projectsTitle: "Proyectos",
     noProjects: "Ningún proyecto usa todas las tecnologías seleccionadas.",
+    loadingProjects: "Cargando proyectos…",
+    projectsError: "No se han podido cargar los proyectos.",
+    retry: "Reintentar",
     lightMode: "Modo claro",
     darkMode: "Modo oscuro",
   },
@@ -48,6 +54,9 @@ export const texts: Record<Language, Texts> = {
     technologiesTitle: "Technologies",
     projectsTitle: "Projects",
     noProjects: "No project uses all the selected technologies.",
+    loadingProjects: "Loading projects…",
+    projectsError: "The projects could not be loaded.",
+    retry: "Try again",
     lightMode: "Light mode",
     darkMode: "Dark mode",
   },

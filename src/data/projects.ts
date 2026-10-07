@@ -5,53 +5,12 @@ export type Project = {
   technologies: string[];
 };
 
-export const projects: Project[] = [
-  {
-    id: "bajas-reembolsos",
-    title: {
-      es: "Gestión de bajas y reembolsos",
-      en: "Withdrawals and refunds management",
-    },
-    summary: {
-      es: "Herramienta interna que valida solicitudes y cruza datos de reembolsos: el 100% de las solicitudes resueltas en un máximo de 3 días.",
-      en: "Internal tool that validates requests and cross-checks refund data: 100% of requests resolved within 3 days.",
-    },
-    technologies: ["Claude Code", "JavaScript", "PostgreSQL"],
-  },
-  {
-    id: "powercom",
-    title: { es: "PowerCom", en: "PowerCom" },
-    summary: {
-      es: "Asistente de atención al alumno con IA que responde con datos del alumno y deriva a una persona cuando hace falta.",
-      en: "AI-powered student-support assistant that answers using each student's data and hands off to a person when needed.",
-    },
-    technologies: ["Claude Code", "JavaScript", "API de Grok", "PostgreSQL"],
-  },
-  {
-    id: "finanzas-casa",
-    title: { es: "Finanzas casa", en: "Household finances" },
-    summary: {
-      es: "App local para llevar las finanzas familiares importando movimientos del banco. Primera versión hecha con Google AI Studio; versión actual en Streamlit.",
-      en: "Local app to manage household finances by importing bank transactions. First version built with Google AI Studio; current version in Streamlit.",
-    },
-    technologies: ["Python", "Streamlit", "SQLite", "Google AI Studio"],
-  },
-  {
-    id: "app-tiempo",
-    title: { es: "App del tiempo", en: "Weather app" },
-    summary: {
-      es: "Previsión a 7 días con varias ubicaciones guardadas.",
-      en: "7-day forecast with multiple saved locations.",
-    },
-    technologies: ["JavaScript", "Vite", "API de Open-Meteo"],
-  },
-  {
-    id: "landing-personal",
-    title: { es: "Landing personal", en: "Personal landing page" },
-    summary: {
-      es: "Web personal hecha a mano y publicada con dominio propio.",
-      en: "Hand-built personal site published on its own domain.",
-    },
-    technologies: ["HTML", "CSS", "GitHub Pages"],
-  },
-];
+export async function fetchProjects(): Promise<Project[]> {
+  const response = await fetch("/data/projects.json");
+
+  if (!response.ok) {
+    throw new Error(`No se pudieron cargar los proyectos (${response.status})`);
+  }
+
+  return response.json();
+}
