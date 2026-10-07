@@ -55,7 +55,21 @@
       "es": "App local para llevar las finanzas familiares importando movimientos del banco. Primera versión hecha con Google AI Studio; versión actual en Streamlit.",
       "en": "Local app to manage household finances by importing bank transactions. First version built with Google AI Studio; current version in Streamlit."
     },
-    "technologies": ["Python", "Streamlit", "SQLite", "Google AI Studio"]
+    "technologies": ["Python", "Streamlit", "SQLite", "Google AI Studio"],
+    "detail": {
+      "problem": {
+        "es": "Revisar la cuenta bancaria de casa llevaba mucho tiempo.",
+        "en": "Reviewing the household bank account took a long time."
+      },
+      "solution": {
+        "es": "App local en Python con Streamlit y base de datos SQLite, que importa los movimientos del banco y avisa de los próximos recibos con una estimación del importe basada en los anteriores. Se abre con un doble clic desde el escritorio. La información bancaria se queda siempre en el equipo donde se usa y nunca sale de él. Se puede instalar en cualquier otro equipo. La primera versión se hizo con Google AI Studio.",
+        "en": "Local app in Python with Streamlit and a SQLite database, which imports bank transactions and warns of upcoming bills with an estimated amount based on previous ones. It opens with a double click from the desktop. Banking information always stays on the computer where it is used and never leaves it. It can be installed on any other computer. The first version was built with Google AI Studio."
+      },
+      "result": {
+        "es": "En uso en casa desde julio de 2026. Una revisión que llevaba unas 2 horas se hace ahora en unos 5 minutos cuando no hay nada que mirar en detalle.",
+        "en": "In use at home since July 2026. A review that used to take about 2 hours now takes about 5 minutes when there is nothing to look at in detail."
+      }
+    }
   },
   {
     "id": "app-tiempo",
@@ -64,7 +78,21 @@
       "es": "Previsión a 7 días con varias ubicaciones guardadas.",
       "en": "7-day forecast with multiple saved locations."
     },
-    "technologies": ["JavaScript", "Vite", "API de Open-Meteo"]
+    "technologies": ["JavaScript", "Vite", "API de Open-Meteo"],
+    "detail": {
+      "problem": {
+        "es": "Ejercicio del Máster AI Maker: consultar una API pública y mostrar sus datos.",
+        "en": "Exercise from the AI Maker Master's: querying a public API and displaying its data."
+      },
+      "solution": {
+        "es": "Aplicación con JavaScript y Vite que consulta la API de Open-Meteo. Amplié el ejercicio básico con previsión a 7 días y varias ubicaciones guardadas.",
+        "en": "Application built with JavaScript and Vite that queries the Open-Meteo API. I extended the basic exercise with a 7-day forecast and multiple saved locations."
+      },
+      "result": {
+        "es": "Terminada y en funcionamiento.",
+        "en": "Finished and working."
+      }
+    }
   },
   {
     "id": "landing-personal",
@@ -73,6 +101,20 @@
       "es": "Web personal hecha a mano y publicada con dominio propio.",
       "en": "Hand-built personal site published on its own domain."
     },
-    "technologies": ["HTML", "CSS", "GitHub Pages"]
+    "technologies": ["HTML", "CSS", "GitHub Pages"],
+    "detail": {
+      "problem": {
+        "es": "Necesitaba una web personal propia para mi búsqueda de empleo.",
+        "en": "I needed a personal website of my own for my job search."
+      },
+      "solution": {
+        "es": "Página escrita a mano en HTML y CSS, publicada con GitHub Pages en un dominio propio.",
+        "en": "Page hand-written in HTML and CSS, published with GitHub Pages on its own domain."
+      },
+      "result": {
+        "es": "En Lighthouse obtuvo 100 en rendimiento, 100 en accesibilidad, 96 en buenas prácticas y 100 en SEO.",
+        "en": "In Lighthouse it scored 100 for performance, 100 for accessibility, 96 for best practices and 100 for SEO."
+      }
+    }
   }
 ]
