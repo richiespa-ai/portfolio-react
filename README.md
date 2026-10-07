@@ -1,14 +1,16 @@
 # Portfolio de Ricardo Español Rowe
 
-Portfolio personal construido con React y TypeScript. Presenta mi perfil, mis habilidades y mis proyectos de automatización de procesos e IA aplicada.
+Portfolio personal construido con React y TypeScript. Presenta mi perfil, mi trayectoria y mis proyectos de automatización de procesos e IA aplicada.
 
-Proyecto en desarrollo, dentro del Máster AI Maker & Automatizaciones (thePower Tech School).
+Proyecto del Máster AI Maker & Automatizaciones (thePower Tech School).
 
 ## Qué incluye
 
-- Presentación, sección "Sobre mí" y habilidades agrupadas por categoría.
-- Proyectos en tarjetas, con filtro acumulativo por tecnología.
-- Detalle de cada proyecto en una ventana modal accesible.
+- Navegación fija, con menú lateral en móvil.
+- Presentación y sección "Sobre mí".
+- Proyectos en tarjetas, con filtro acumulativo por tecnología y detalle en una ventana modal accesible.
+- Experiencia profesional, habilidades agrupadas por categoría y formación.
+- Formulario de contacto con validación.
 - Carga de los proyectos desde un archivo de datos, con estados de espera y de error.
 - Español e inglés, con selector de idioma.
 - Tema claro y oscuro: sigue la preferencia del sistema y recuerda la elección.
@@ -17,8 +19,7 @@ Proyecto en desarrollo, dentro del Máster AI Maker & Automatizaciones (thePower
 
 ## En construcción
 
-- Formulario de contacto con validación.
-- Experiencia profesional y formación.
+- Envío del formulario de contacto desde la propia página. Ahora abre el programa de correo del visitante.
 - Publicación con dominio propio.
 
 ## Tecnologías
@@ -47,7 +48,7 @@ La aplicación queda disponible en `http://localhost:5173`.
     src/
       components/     Componentes de la interfaz
       components/ui/  Componentes de shadcn/ui
-      data/           Tipos, habilidades y textos en los dos idiomas
+      data/           Tipos, trayectoria, habilidades y textos en los dos idiomas
       lib/            Utilidades
       store/          Estado global
 
