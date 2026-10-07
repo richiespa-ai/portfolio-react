@@ -66,7 +66,7 @@ function Navbar() {
           <SheetTrigger className="cursor-pointer rounded-md border border-slate-300 px-3 py-1 font-mono text-sm lg:hidden dark:border-slate-600">
             {n.menu}
           </SheetTrigger>
-          <SheetContent side="right">
+          <SheetContent side="right" closeLabel={t.close}>
             <SheetHeader>
               <SheetTitle>{n.menu}</SheetTitle>
               <SheetDescription>{n.sections}</SheetDescription>

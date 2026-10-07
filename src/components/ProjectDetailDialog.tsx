@@ -30,7 +30,10 @@ function ProjectDetailDialog({ project, detail }: ProjectDetailDialogProps) {
       <DialogTrigger className="mt-6 cursor-pointer self-start rounded-md border border-slate-300 px-3 py-1.5 text-sm font-semibold hover:border-brand hover:text-brand dark:border-slate-600 dark:hover:border-blue-400 dark:hover:text-blue-400">
         {t.viewDetail}
       </DialogTrigger>
-      <DialogContent className="max-h-[calc(100dvh-2rem)] gap-6 overflow-y-auto p-6 text-base sm:max-w-xl">
+      <DialogContent
+        closeLabel={t.close}
+        className="max-h-[calc(100dvh-2rem)] gap-6 overflow-y-auto p-6 text-base sm:max-w-xl"
+      >
         <DialogHeader>
           <DialogTitle className="text-xl font-semibold">
             {project.title[language]}
@@ -39,9 +42,9 @@ function ProjectDetailDialog({ project, detail }: ProjectDetailDialogProps) {
         </DialogHeader>
         {sections.map((section) => (
           <div key={section.label}>
-            <h4 className="font-mono text-xs uppercase tracking-wider text-brand dark:text-blue-400">
+            <h3 className="font-mono text-xs uppercase tracking-wider text-brand dark:text-blue-400">
               {section.label}
-            </h4>
+            </h3>
             <p className="mt-2 text-slate-700 dark:text-slate-300">
               {section.text}
             </p>
