@@ -9,7 +9,21 @@
       "es": "Herramienta interna que valida solicitudes y cruza datos de reembolsos: el 100% de las solicitudes resueltas en un máximo de 3 días.",
       "en": "Internal tool that validates requests and cross-checks refund data: 100% of requests resolved within 3 days."
     },
-    "technologies": ["Claude Code", "JavaScript", "PostgreSQL"]
+    "technologies": ["Claude Code", "JavaScript", "PostgreSQL"],
+    "detail": {
+      "problem": {
+        "es": "Las solicitudes de baja y reembolso tardaban entre 2 semanas y 1 mes en resolverse.",
+        "en": "Withdrawal and refund requests took between 2 weeks and 1 month to resolve."
+      },
+      "solution": {
+        "es": "Aplicación web construida con Claude Code, integrada con PostgreSQL (Data Warehouse institucional) y con control de acceso por 4 roles. Automatiza la validación de solicitudes y el cruce de datos, y deja la ejecución final a una persona por tratarse de importes sensibles. Incluye un módulo de KPIs para managers.",
+        "en": "Web application built with Claude Code, integrated with PostgreSQL (institutional Data Warehouse) and role-based access control across 4 roles. It automates request validation and data cross-checking, leaving final execution to a person given the sensitive amounts involved. Includes a KPI module for managers."
+      },
+      "result": {
+        "es": "El 100% de las solicitudes resueltas en un máximo de 3 días y un 60% menos de reembolsos tramitados. Más de un año en producción como herramienta estándar del proceso en toda la escuela.",
+        "en": "100% of requests resolved within 3 days and a 60% reduction in the number of refunds processed. In production for more than a year as the school-wide standard tool for the process."
+      }
+    }
   },
   {
     "id": "powercom",
@@ -18,7 +32,21 @@
       "es": "Asistente de atención al alumno con IA que responde con datos del alumno y deriva a una persona cuando hace falta.",
       "en": "AI-powered student-support assistant that answers using each student's data and hands off to a person when needed."
     },
-    "technologies": ["Claude Code", "JavaScript", "API de Grok", "PostgreSQL"]
+    "technologies": ["Claude Code", "JavaScript", "API de Grok", "PostgreSQL"],
+    "detail": {
+      "problem": {
+        "es": "La atención al alumno dependía de Intercom, con coste por usuario, y su IA respondía el 15% de las conversaciones.",
+        "en": "Student support depended on Intercom, with a per-user cost, and its AI answered 15% of conversations."
+      },
+      "solution": {
+        "es": "Asistente con IA (API de Grok) integrado con el Data Warehouse para personalizar las respuestas según la formación de cada alumno. Deriva a un agente humano ante consultas fuera de alcance o señales de frustración. Implantado con piloto y despliegue gradual.",
+        "en": "AI-powered assistant (Grok API) integrated with the Data Warehouse to personalize answers based on each student's program. It escalates to a human agent for out-of-scope queries or signs of frustration. Introduced with a pilot and a phased rollout."
+      },
+      "result": {
+        "es": "Gestiona unos 2.000 tickets al mes. La IA responde el 55% de las conversaciones y resuelve el 85% de ellas. En producción desde diciembre de 2025.",
+        "en": "Handles around 2,000 tickets a month. The AI answers 55% of conversations and resolves 85% of them. In production since December 2025."
+      }
+    }
   },
   {
     "id": "finanzas-casa",

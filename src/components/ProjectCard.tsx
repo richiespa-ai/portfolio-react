@@ -1,3 +1,4 @@
+import ProjectDetailDialog from "./ProjectDetailDialog";
 import type { Project } from "../data/projects";
 import { useSettings } from "../store/settings";
 
@@ -24,6 +25,9 @@ function ProjectCard({ project }: ProjectCardProps) {
           </li>
         ))}
       </ul>
+      {project.detail && (
+        <ProjectDetailDialog project={project} detail={project.detail} />
+      )}
     </article>
   );
 }

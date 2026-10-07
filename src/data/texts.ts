@@ -15,6 +15,11 @@ type Texts = {
   loadingProjects: string;
   projectsError: string;
   retry: string;
+  viewDetail: string;
+  problemLabel: string;
+  solutionLabel: string;
+  resultLabel: string;
+  close: string;
   lightMode: string;
   darkMode: string;
 };
@@ -37,6 +42,11 @@ export const texts: Record<Language, Texts> = {
     loadingProjects: "Cargando proyectos…",
     projectsError: "No se han podido cargar los proyectos.",
     retry: "Reintentar",
+    viewDetail: "Ver detalle",
+    problemLabel: "El problema",
+    solutionLabel: "Lo que hice",
+    resultLabel: "El resultado",
+    close: "Cerrar",
     lightMode: "Modo claro",
     darkMode: "Modo oscuro",
   },
@@ -57,6 +67,11 @@ export const texts: Record<Language, Texts> = {
     loadingProjects: "Loading projects…",
     projectsError: "The projects could not be loaded.",
     retry: "Try again",
+    viewDetail: "View details",
+    problemLabel: "The problem",
+    solutionLabel: "What I did",
+    resultLabel: "The result",
+    close: "Close",
     lightMode: "Light mode",
     darkMode: "Dark mode",
   },

@@ -1,8 +1,17 @@
+type Translated = { es: string; en: string };
+
+export type ProjectDetail = {
+  problem: Translated;
+  solution: Translated;
+  result: Translated;
+};
+
 export type Project = {
   id: string;
-  title: { es: string; en: string };
-  summary: { es: string; en: string };
+  title: Translated;
+  summary: Translated;
   technologies: string[];
+  detail?: ProjectDetail;
 };
 
 export async function fetchProjects(): Promise<Project[]> {
