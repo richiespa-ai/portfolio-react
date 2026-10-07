@@ -40,6 +40,8 @@ El repositorio está preparado para trabajar con Claude Code:
   - `nuevo-componente`: crear un componente o una sección siguiendo las convenciones del proyecto.
   - `nuevo-proyecto`: añadir un proyecto a la rejilla, solo con datos verificados.
   - `verificar`: comprobaciones antes de cada commit (tipos, linter, idiomas, contenido y README).
+  - `.claude/agents/` contiene subagentes, que trabajan en su propio contexto y devuelven solo un informe:
+  - `revisor-accesibilidad`: revisión de solo lectura de los componentes (nombres accesibles, etiquetas de formulario, jerarquía de títulos, idioma de la página y textos sin traducir). Devuelve cada problema con archivo, línea y severidad.
 
 ## Cómo ejecutarlo en local
 
@@ -52,6 +54,7 @@ La aplicación queda disponible en `http://localhost:5173`.
 
 ## Estructura
 
+    .claude/agents/   Subagentes de revisión para Claude Code
     .claude/skills/   Procedimientos para Claude Code
     public/
       cv/             CV en PDF, en español y en inglés
