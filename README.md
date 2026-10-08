@@ -43,7 +43,7 @@ El repositorio está preparado para trabajar con Claude Code:
   - `.claude/agents/` contiene subagentes, que trabajan en su propio contexto y devuelven solo un informe:
   - `revisor-accesibilidad`: revisión de solo lectura de los componentes (nombres accesibles, etiquetas de formulario, jerarquía de títulos, idioma de la página y textos sin traducir). Devuelve cada problema con archivo, línea y severidad.
   - `.claude/settings.json` define un hook: cada vez que Claude Code crea o edita un archivo, se le pasa Prettier de forma automática con el script `.claude/hooks/formatear.mjs`. Respeta lo excluido en `.prettierignore`.
-  - `.mcp.json` conecta Claude Code con el servidor MCP oficial de GitHub. El token no está en el repositorio: se lee de la variable de entorno `GITHUB_PAT`, y solo tiene permiso sobre los issues de este repositorio.
+  - Servidores MCP: se probó el servidor oficial de GitHub y se retiró después de evaluarlo. La decisión y sus motivos están en `CLAUDE.md`.
 
 ## Cómo ejecutarlo en local
 

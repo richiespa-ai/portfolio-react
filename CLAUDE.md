@@ -48,3 +48,12 @@ React 19, TypeScript, Vite, Tailwind CSS 4, Zustand (idioma y tema), TanStack Qu
 - Rama `main`. Un commit por pieza terminada, con el mensaje en español y en presente: "Añade...", "Corrige...".
 - No hagas push sin que Ricardo lo pida.
 - Antes de cada commit, ejecuta la skill `verificar`.
+
+## Servidores MCP
+
+Decisión del 08/10/2026, tras evaluar con cinco criterios: frecuencia, herramientas, mantenimiento, permisos y CLI equivalente.
+
+- GitHub (servidor oficial, ámbito de proyecto): instalado y probado abriendo el issue #1; después retirado. Se usaría menos de una vez por semana, expone 47 herramientas para usar una, y `git` y `gh` cubren lo mismo desde la terminal. El token se revocó.
+- Medición con `/context`: retirarlo bajó de 141 a 95 herramientas y de 618 a 616 tokens, porque las herramientas se cargan bajo demanda. El coste de un servidor sin usar no es el contexto, sino la credencial activa y su mantenimiento.
+- Los conectores de la cuenta de claude.ai (Gmail, Google Drive, Docs, Sheets, Calendar, Claude Docs e Indeed) aparecen también aquí, pero se configuran desde la cuenta, no desde este repositorio.
+- Antes de añadir un servidor nuevo: demostrar el cuello de botella (cuántas veces por semana y qué cuesta cada vez) y probar primero la CLI equivalente.
