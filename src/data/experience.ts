@@ -37,14 +37,16 @@ export const experience: ExperienceItem[] = [
     },
     points: {
       es: [
-        "Liderazgo operativo en el área de Student Success y soporte: gestión del ciclo de vida del alumno, resolución de incidencias técnicas y optimización de flujos de comunicación masiva.",
+        "Liderazgo operativo en el área de Student Success y soporte, coordinando a un equipo de 6 personas sin cargo formal: gestión del ciclo de vida del alumno, resolución de incidencias técnicas y optimización de flujos de comunicación masiva.",
         "Desde 2025, diseño y puesta en producción de dos herramientas internas con IA construidas con Claude Code (ver Proyectos).",
         "En ambas herramientas, responsable del proyecto de principio a fin: detección de la necesidad y propuesta a dirección, definición de requisitos con el equipo, pruebas, despliegue, formación de usuarios y seguimiento de KPIs.",
+        "Análisis de métricas de soporte en Intercom (tiempos de respuesta, NPS y calidad) para identificar cuellos de botella y proponer mejoras de producto y automatización de flujos. Informes de devoluciones y de ventas en Looker Studio durante un año, hasta sustituir los de devoluciones por el módulo de KPIs de la herramienta de reembolsos.",
       ],
       en: [
-        "Operational leadership in Student Success and support: student lifecycle management, technical issue resolution and optimization of mass-communication workflows.",
+        "Operational leadership in Student Success and support, coordinating a team of 6 people without a formal title: student lifecycle management, technical issue resolution and optimization of mass-communication workflows.",
         "Since 2025, designed and took to production two internal AI tools built with Claude Code (see Projects).",
         "For both tools, end-to-end project ownership: identifying the need and pitching it to management, defining requirements with the team, testing, deployment, user training and KPI tracking.",
+        "Analysis of support metrics in Intercom (response times, NPS and quality) to identify bottlenecks and propose product improvements and workflow automation. Built refund and sales reports in Looker Studio for a year, until the refunds reporting moved to the KPI module of the refunds tool.",
       ],
     },
   },
@@ -92,10 +94,10 @@ export const experience: ExperienceItem[] = [
     period: { es: "2007 – 2018", en: "2007 – 2018" },
     points: {
       es: [
-        "Prospección y gestión de grandes cuentas B2B en consultoría de valor añadido, negociación de propuestas comerciales complejas y fidelización de cartera, cumpliendo consistentemente los objetivos anuales de facturación.",
+        "Prospección y gestión de grandes cuentas B2B en consultoría de valor añadido, negociación de propuestas comerciales complejas, coordinación de los proyectos entre el cliente y los equipos técnicos internos, y fidelización de cartera, cumpliendo consistentemente los objetivos anuales de facturación.",
       ],
       en: [
-        "Prospecting and management of large B2B accounts in value-added consulting, negotiation of complex commercial proposals and portfolio retention, consistently meeting annual revenue targets.",
+        "Prospecting and management of large B2B accounts in value-added consulting, negotiation of complex commercial proposals, coordination of projects between the client and internal technical teams, and portfolio retention, consistently meeting annual revenue targets.",
       ],
     },
   },
@@ -109,10 +111,10 @@ export const experience: ExperienceItem[] = [
     period: { es: "2002 – 2007", en: "2002 – 2007" },
     points: {
       es: [
-        "Inició como Agente de Seguros y asumió la jefatura de un equipo comercial en 2004, compaginando ambas responsabilidades hasta 2007: formación, tutoría, prospección de mercado y control de objetivos por zonas geográficas.",
+        "Inició como Agente de Seguros y asumió la jefatura de un equipo comercial de 5 personas en 2004, compaginando ambas responsabilidades hasta 2007: formación, tutoría, prospección de mercado y control de objetivos por zonas geográficas.",
       ],
       en: [
-        "Started as an Insurance Agent and took on the leadership of a sales team in 2004, combining both roles until 2007: training, mentoring, market prospecting and target management by geographic area.",
+        "Started as an Insurance Agent and took on the leadership of a 5-person sales team in 2004, combining both roles until 2007: training, mentoring, market prospecting and target management by geographic area.",
       ],
     },
   },
