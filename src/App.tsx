@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Education from "./components/Education";
+import EnvBadge from "./components/EnvBadge";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white font-sans text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+      <EnvBadge />
       <Navbar />
       <Hero />
       <main className="mx-auto max-w-4xl px-6 pb-24">

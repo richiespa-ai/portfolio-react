@@ -35,6 +35,7 @@ React 19, TypeScript, Vite, Tailwind CSS 4, Zustand (idioma y tema), TanStack Qu
 - El color de marca es `brand` (`text-brand`, `bg-brand`, `border-brand`). No uses `accent` para eso: es un color de shadcn.
 - Cada color lleva su variante `dark:`. El modo oscuro se activa con la clase `dark` en `<html>`.
 - Un dato que se repite se escribe en un solo sitio. Ejemplo: el correo de contacto está en `src/data/contactTexts.ts`.
+- Las variables de entorno se leen solo en `src/lib/env.ts`, nunca con `import.meta.env` en los componentes. Cada variable nueva se añade a `.env.example` y a `src/vite-env.d.ts`.
 
 ## Contenido
 

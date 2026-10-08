@@ -49,9 +49,11 @@ El repositorio está preparado para trabajar con Claude Code:
 
 Hace falta tener Node.js instalado.
 
-    npm install
-    npm run dev
+        npm install
+        cp .env.example .env.local
+        npm run dev
 
+En desarrollo, una franja amarilla arriba muestra el entorno. No aparece en la versión de producción.
 La aplicación queda disponible en `http://localhost:5173`.
 
 ## Estructura
