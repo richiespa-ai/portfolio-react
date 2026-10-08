@@ -123,10 +123,8 @@ export const competencies: Competency[] = [
 
 export const technologies: Technology[] = [
   { name: "Claude Code", level: "produccion" },
-  { name: "JavaScript", level: "produccion" },
   { name: "PostgreSQL", level: "produccion" },
   { name: "API de Grok", level: "produccion" },
-  { name: "Python", level: "proyectos" },
   { name: "Streamlit", level: "proyectos" },
   { name: "SQLite", level: "proyectos" },
   { name: "Vite", level: "proyectos" },
