@@ -1,4 +1,5 @@
 import { useState } from "react";
+import type { FormEvent } from "react";
 import Section from "./Section";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -8,6 +9,8 @@ import { useSettings } from "@/store/settings";
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const noErrors = { name: false, email: false, message: false };
 
+type Status = "idle" | "sending" | "sent" | "error";
+
 function Contact() {
   const language = useSettings((state) => state.language);
   const t = contactTexts[language];
@@ -16,9 +19,11 @@ function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [errors, setErrors] = useState(noErrors);
-  const [opened, setOpened] = useState(false);
+  const [status, setStatus] = useState<Status>("idle");
 
-  function handleSubmit() {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
     const newErrors = {
       name: name.trim() === "",
       email: !emailPattern.test(email.trim()),
@@ -27,29 +32,51 @@ function Contact() {
     setErrors(newErrors);
 
     if (newErrors.name || newErrors.email || newErrors.message) {
-      setOpened(false);
+      setStatus("idle");
       return;
     }
 
-    const subject = encodeURIComponent(t.subject);
-    const body = encodeURIComponent(
-      `${message.trim()}\n\n${name.trim()}\n${email.trim()}`,
-    );
-    window.location.href = `mailto:${contactEmail}?subject=${subject}&body=${body}`;
-    setOpened(true);
+    const botField = new FormData(event.currentTarget).get("bot-field");
+    const body = new URLSearchParams({
+      "form-name": "contact",
+      "bot-field": typeof botField === "string" ? botField : "",
+      name: name.trim(),
+      email: email.trim(),
+      message: message.trim(),
+    });
+
+    setStatus("sending");
+    try {
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: body.toString(),
+      });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      setName("");
+      setEmail("");
+      setMessage("");
+      setStatus("sent");
+    } catch {
+      setStatus("error");
+    }
   }
 
   return (
     <Section id="contacto" title={t.title}>
       <p className="max-w-2xl text-slate-700 dark:text-slate-300">{t.intro}</p>
       <form
+        name="contact"
         noValidate
         className="mt-8 grid max-w-xl gap-6"
-        onSubmit={(event) => {
-          event.preventDefault();
-          handleSubmit();
-        }}
+        onSubmit={handleSubmit}
       >
+        <p className="hidden" aria-hidden="true">
+          <label>
+            {t.botLabel}
+            <input name="bot-field" tabIndex={-1} autoComplete="off" />
+          </label>
+        </p>
         <div className="grid gap-2">
           <label htmlFor="contact-name" className="text-sm font-semibold">
             {t.nameLabel}
@@ -112,22 +139,28 @@ function Contact() {
         </div>
         <button
           type="submit"
-          className="cursor-pointer justify-self-start rounded-md bg-brand px-5 py-3 font-semibold text-white hover:bg-blue-800"
+          disabled={status === "sending"}
+          className="cursor-pointer justify-self-start rounded-md bg-brand px-5 py-3 font-semibold text-white hover:bg-blue-800 disabled:cursor-wait disabled:opacity-70"
         >
-          {t.submit}
+          {status === "sending" ? t.sending : t.submit}
         </button>
-        {opened && (
-          <p role="status" className="text-slate-700 dark:text-slate-300">
-            {t.opened}{" "}
-            <a
-              href={`mailto:${contactEmail}`}
-              className="font-semibold text-brand underline dark:text-blue-400"
-            >
-              {contactEmail}
-            </a>
-            .
-          </p>
-        )}
+        <div role="status" aria-live="polite">
+          {status === "sent" && (
+            <p className="text-slate-700 dark:text-slate-300">{t.sent}</p>
+          )}
+          {status === "error" && (
+            <p className="text-destructive">
+              {t.error}{" "}
+              <a
+                href={`mailto:${contactEmail}`}
+                className="font-semibold text-brand underline dark:text-blue-400"
+              >
+                {contactEmail}
+              </a>
+              .
+            </p>
+          )}
+        </div>
       </form>
     </Section>
   );
