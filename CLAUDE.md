@@ -9,6 +9,7 @@ Ricardo está aprendiendo React con este proyecto. Explica siempre qué cambias 
 - `npm run dev`: servidor de desarrollo en `http://localhost:5173`.
 - `npx tsc -b`: comprobación de tipos de todo el proyecto. Sin salida significa sin errores.
 - `npm run lint`: linter (oxlint).
+- `npx prettier --check .`: comprobación de formato (Prettier).
 - `npm run build`: comprobación de tipos y build de producción.
 
 Tras instalar o desinstalar paquetes, si la página sale en blanco, reinicia con `npm run dev -- --force`.
@@ -46,8 +47,10 @@ React 19, TypeScript, Vite, Tailwind CSS 4, Zustand (idioma y tema), TanStack Qu
 
 ## Git
 
-- Rama `main`. Un commit por pieza terminada, con el mensaje en español y en presente: "Añade...", "Corrige...".
-- No hagas push sin que Ricardo lo pida.
+- `main` está protegida: no admite push directo. Cada pieza va en una rama propia y entra en `main` con un pull request.
+- El pull request solo se puede fusionar con el check `CI / verificar` en verde (`.github/workflows/ci.yml`: lint, formato y build).
+- Un commit por pieza terminada, con el mensaje en español y en presente: "Añade...", "Corrige...".
+- No hagas push ni abras pull requests sin que Ricardo lo pida.
 - Antes de cada commit, ejecuta la skill `verificar`.
 
 ## Servidores MCP
