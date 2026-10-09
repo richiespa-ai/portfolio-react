@@ -61,3 +61,10 @@ Decisión del 08/10/2026, tras evaluar con cinco criterios: frecuencia, herramie
 - Medición con `/context`: retirarlo bajó de 141 a 95 herramientas y de 618 a 616 tokens, porque las herramientas se cargan bajo demanda. El coste de un servidor sin usar no es el contexto, sino la credencial activa y su mantenimiento.
 - Los conectores de la cuenta de claude.ai (Gmail, Google Drive, Docs, Sheets, Calendar, Claude Docs e Indeed) aparecen también aquí, pero se configuran desde la cuenta, no desde este repositorio.
 - Antes de añadir un servidor nuevo: demostrar el cuello de botella (cuántas veces por semana y qué cuesta cada vez) y probar primero la CLI equivalente.
+
+## Entornos
+
+- `main`: producción en Vercel (portfolio-react-roweman.vercel.app). Sin franja.
+- Cualquier otra rama con pull request: vista previa en Vercel, con franja.
+- Local: `npm run dev`, con franja `desarrollo · development`.
+- Variables en Vercel: `VITE_ENV_LABEL` en los tres entornos y `VITE_SHOW_ENV_BADGE=true` solo en Preview.
