@@ -132,6 +132,7 @@ export const technologies: Technology[] = [
   { name: "HTML", level: "proyectos" },
   { name: "CSS", level: "proyectos" },
   { name: "GitHub Pages", level: "proyectos" },
+  { name: "Netlify", level: "proyectos" },
   { name: "API de OpenAI", level: "proyectos" },
   { name: "Google AI Studio", level: "proyectos" },
   { name: "React", level: "formacion" },
