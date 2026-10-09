@@ -45,6 +45,10 @@ El repositorio está preparado para trabajar con Claude Code:
   - `.claude/settings.json` define un hook: cada vez que Claude Code crea o edita un archivo, se le pasa Prettier de forma automática con el script `.claude/hooks/formatear.mjs`. Respeta lo excluido en `.prettierignore`.
   - Servidores MCP: se probó el servidor oficial de GitHub y se retiró después de evaluarlo. La decisión y sus motivos están en `CLAUDE.md`.
 
+## Integración continua
+
+Cada pull request pasa por GitHub Actions (`.github/workflows/ci.yml`): instala las dependencias y ejecuta el linter, la comprobación de formato y el build. La rama `main` está protegida: solo admite cambios por pull request y con esas comprobaciones en verde.
+
 ## Cómo ejecutarlo en local
 
 Hace falta tener Node.js instalado.
