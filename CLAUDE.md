@@ -62,9 +62,19 @@ Decisión del 08/10/2026, tras evaluar con cinco criterios: frecuencia, herramie
 - Los conectores de la cuenta de claude.ai (Gmail, Google Drive, Docs, Sheets, Calendar, Claude Docs e Indeed) aparecen también aquí, pero se configuran desde la cuenta, no desde este repositorio.
 - Antes de añadir un servidor nuevo: demostrar el cuello de botella (cuántas veces por semana y qué cuesta cada vez) y probar primero la CLI equivalente.
 
+## Publicación
+
+Decisión del 09/10/2026.
+
+- Servicio: Netlify (equipo `roweman`), conectado a este repositorio. Configuración en `netlify.toml` (`npm run build`, carpeta `dist`) y `public/_redirects` (cualquier ruta sirve `index.html`).
+- Dirección: https://portfolio.ricardoespanolrowe.com. Registro CNAME en Cloudflare hacia `leafy-khapse-d4ea92.netlify.app`, sin proxy (nube gris), para que Netlify pueda emitir el certificado HTTPS. La dirección `.netlify.app` sigue funcionando.
+- Por qué Netlify: el portfolio es una web estática, sin servidor propio, y Netlify Forms recibe el formulario de contacto de serie: guarda los mensajes, filtra el spam y avisa por correo. En Vercel haría falta una función de servidor o un servicio externo.
+- Vercel se probó como ejercicio del curso y sigue conectado al repositorio, pero no es el servicio oficial: su formulario no funciona.
+- Formulario: `contact`, declarado oculto en `index.html` para que Netlify lo detecte al publicar. Si cambian los campos de `Contact.tsx`, cambia también el formulario oculto. Los avisos por correo se configuran en Netlify, en Project configuration → Forms → Form notifications.
+
 ## Entornos
 
-- `main`: producción en Vercel (portfolio-react-roweman.vercel.app). Sin franja.
-- Cualquier otra rama con pull request: vista previa en Vercel, con franja.
+- `main`: producción en Netlify (portfolio.ricardoespanolrowe.com). Sin franja.
+- Cualquier otra rama con pull request: Deploy Preview de Netlify, enlazada en un comentario del pull request.
 - Local: `npm run dev`, con franja `desarrollo · development`.
-- Variables en Vercel: `VITE_ENV_LABEL` en los tres entornos y `VITE_SHOW_ENV_BADGE=true` solo en Preview.
+- Variables: en `netlify.toml`, por contexto. Producción: `VITE_ENV_LABEL=produccion`. Deploy Preview: `VITE_ENV_LABEL=preview` y `VITE_SHOW_ENV_BADGE=true`. Son públicas: nunca pongas ahí una clave.
