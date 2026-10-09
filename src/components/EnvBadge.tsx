@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { env } from "@/lib/env";
 
 function EnvBadge() {
   if (!env.showEnvBadge) return null;
+  useState(true);
 
   return (
     <div className="bg-amber-400 py-1 text-center font-mono text-xs font-semibold text-slate-900 dark:bg-amber-300">
