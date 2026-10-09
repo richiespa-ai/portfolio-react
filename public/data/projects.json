@@ -116,5 +116,28 @@
         "en": "In Lighthouse it scored 100 for performance, 100 for accessibility, 96 for best practices and 100 for SEO."
       }
     }
+  },
+  {
+    "id": "portfolio-react",
+    "title": { "es": "Portfolio en React", "en": "React portfolio" },
+    "summary": {
+      "es": "Este portfolio: web en React y TypeScript, en español e inglés y con tema claro y oscuro, publicada con dominio propio.",
+      "en": "This portfolio: a React and TypeScript site in Spanish and English, with light and dark themes, published on its own domain."
+    },
+    "technologies": ["React", "TypeScript", "Vite", "Tailwind", "Claude Code", "Netlify"],
+    "detail": {
+      "problem": {
+        "es": "Ejercicio del Máster AI Maker: construir un portfolio en React y publicarlo.",
+        "en": "Exercise from the AI Maker Master's: building a portfolio in React and publishing it."
+      },
+      "solution": {
+        "es": "Proyectos cargados desde un archivo de datos, con filtro por tecnología y detalle accesible. Construido con Claude Code, usando instrucciones del proyecto, skills, un subagente de accesibilidad y un hook de formato. Cada cambio pasa por integración continua en GitHub Actions y se publica en Netlify, que también recibe el formulario de contacto.",
+        "en": "Projects loaded from a data file, with a technology filter and an accessible detail view. Built with Claude Code, using project instructions, skills, an accessibility subagent and a formatting hook. Every change goes through continuous integration on GitHub Actions and is published on Netlify, which also receives the contact form."
+      },
+      "result": {
+        "es": "Publicado en portfolio.ricardoespanolrowe.com desde octubre de 2026.",
+        "en": "Published at portfolio.ricardoespanolrowe.com since October 2026."
+      }
+    }
   }
 ]
