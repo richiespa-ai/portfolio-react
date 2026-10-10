@@ -37,13 +37,13 @@ export const experience: ExperienceItem[] = [
     },
     points: {
       es: [
-        "Liderazgo operativo en el área de Student Success y soporte, coordinando a un equipo de 6 personas sin cargo formal: gestión del ciclo de vida del alumno, resolución de incidencias técnicas y optimización de flujos de comunicación masiva.",
+        "Liderazgo operativo en el área de Student Success y soporte, coordinando a un equipo de 6 personas: gestión del ciclo de vida del alumno, resolución de incidencias técnicas y optimización de flujos de comunicación masiva.",
         "Desde 2025, diseño y puesta en producción de dos herramientas internas con IA construidas con Claude Code (ver Proyectos).",
         "En ambas herramientas, responsable del proyecto de principio a fin: detección de la necesidad y propuesta a dirección, definición de requisitos con el equipo, pruebas, despliegue, formación de usuarios y seguimiento de KPIs.",
         "Análisis de métricas de soporte en Intercom (tiempos de respuesta, NPS y calidad) para identificar cuellos de botella y proponer mejoras de producto y automatización de flujos. Informes de devoluciones y de ventas en Looker Studio durante un año, hasta sustituir los de devoluciones por el módulo de KPIs de la herramienta de reembolsos.",
       ],
       en: [
-        "Operational leadership in Student Success and support, coordinating a team of 6 people without a formal title: student lifecycle management, technical issue resolution and optimization of mass-communication workflows.",
+        "Operational leadership in Student Success and support, coordinating a team of 6 people: student lifecycle management, technical issue resolution and optimization of mass-communication workflows.",
         "Since 2025, designed and took to production two internal AI tools built with Claude Code (see Projects).",
         "For both tools, end-to-end project ownership: identifying the need and pitching it to management, defining requirements with the team, testing, deployment, user training and KPI tracking.",
         "Analysis of support metrics in Intercom (response times, NPS and quality) to identify bottlenecks and propose product improvements and workflow automation. Built refund and sales reports in Looker Studio for a year, until the refunds reporting moved to the KPI module of the refunds tool.",
