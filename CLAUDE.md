@@ -53,6 +53,16 @@ React 19, TypeScript, Vite, Tailwind CSS 4, Zustand (idioma y tema), TanStack Qu
 - No hagas push ni abras pull requests sin que Ricardo lo pida.
 - Antes de cada commit, ejecuta la skill `verificar`.
 
+## Bucles con `/goal`
+
+Decisión del 13/10/2026.
+
+- Solo para tareas mecánicas con un final comprobable: dejar el build en verde tras actualizar dependencias, o corregir lint y formato en muchos archivos. Nunca para trabajo nuevo de React, que va paso a paso y explicado.
+- `/goal` lo escribe Ricardo en la terminal; Claude no puede lanzarlo. Cuando una tarea encaje, propónselo con la condición ya escrita.
+- Condición de referencia: `/goal npx tsc -b termina sin salida, npm run lint da 0 errores, npx prettier --check . está limpio y npm run build termina sin errores; o para tras 5 turnos`.
+- El evaluador solo lee la conversación, no ejecuta comandos: la condición tiene que demostrarse con salidas de comandos. El tope de turnos va dentro de la condición y lo juzga el modelo, así que es un freno blando.
+- Al terminar, se ejecuta igualmente la skill `verificar` antes del commit.
+
 ## Servidores MCP
 
 Decisión del 08/10/2026, tras evaluar con cinco criterios: frecuencia, herramientas, mantenimiento, permisos y CLI equivalente.
