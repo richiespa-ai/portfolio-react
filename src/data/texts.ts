@@ -26,15 +26,15 @@ type Texts = {
 
 export const texts: Record<Language, Texts> = {
   es: {
-    role: "AI Operations Specialist",
+    role: "Operaciones de soporte y CX · IA aplicada y automatización",
     tagline:
-      "Ayudo a equipos de operaciones y atención al cliente a eliminar trabajo manual con IA.",
+      "Ayudo a equipos de soporte y atención al cliente a eliminar trabajo manual con IA.",
     viewProjects: "Ver proyectos",
     downloadCv: "Descargar CV",
     cvFile: "/cv/ricardo-espanol-rowe-es.pdf",
     aboutTitle: "Sobre mí",
     aboutBody:
-      "Cuento con más de 24 años en operaciones, atención al cliente y al estudiante y desarrollo de negocio B2B. Desde 2025 he diseñado y llevado a producción dos herramientas internas construidas con Claude Code, en uso por los equipos de soporte y de bajas y reembolsos, con resultados medibles en tiempos de resolución y en conversaciones resueltas por IA.",
+      "Coordiné un equipo de soporte de 6 personas en thePower y automaticé nuestra propia operación con IA. Desde enero de 2025 he diseñado y llevado a producción dos herramientas internas, en uso por los equipos de soporte y de bajas y reembolsos: un asistente que responde el 55 % de las conversaciones con alumnos y una aplicación que resuelve el 100 % de las solicitudes en 3 días como máximo. Antes, desarrollo de negocio B2B y gestión de cuentas clave en consultoría.",
     skillsTitle: "Habilidades",
     technologiesTitle: "Tecnologías",
     projectsTitle: "Proyectos",
@@ -51,15 +51,15 @@ export const texts: Record<Language, Texts> = {
     darkMode: "Modo oscuro",
   },
   en: {
-    role: "AI Operations Specialist",
+    role: "Support & CX Operations · Applied AI and Automation",
     tagline:
-      "I help operations and customer support teams eliminate manual work with AI.",
+      "I help support and customer service teams eliminate manual work with AI.",
     viewProjects: "View projects",
     downloadCv: "Download CV",
     cvFile: "/cv/ricardo-espanol-rowe-en.pdf",
     aboutTitle: "About me",
     aboutBody:
-      "I bring more than 24 years of experience in operations, customer and student support, and B2B business development. Since 2025 I have designed and taken to production two internal AI tools built with Claude Code, used by the support and the withdrawals & refunds teams, with measurable results in resolution times and AI-resolved conversations.",
+      "I coordinated a 6-person support team at thePower and automated our own operation with AI. Since January 2025 I have designed and taken to production two internal tools, used by the support and the withdrawals & refunds teams: an assistant that answers 55% of student conversations and an app that resolves 100% of requests within 3 days. Previously, B2B business development and key account management in consulting.",
     skillsTitle: "Skills",
     technologiesTitle: "Technologies",
     projectsTitle: "Projects",
