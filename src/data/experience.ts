@@ -28,8 +28,8 @@ export const experience: ExperienceItem[] = [
     id: "thepower",
     company: "thePower",
     role: {
-      es: "Student Success & Operations",
-      en: "Student Success & Operations",
+      es: "Customer Success · Coordinación de equipo (6 personas) y proyectos de IA",
+      en: "Customer Success · Team coordination (6 people) and AI projects",
     },
     period: {
       es: "Abril 2020 – Septiembre 2026",
@@ -37,36 +37,16 @@ export const experience: ExperienceItem[] = [
     },
     points: {
       es: [
-        "Liderazgo operativo en el área de Student Success y soporte, coordinando a un equipo de 6 personas: gestión del ciclo de vida del alumno, resolución de incidencias técnicas y optimización de flujos de comunicación masiva.",
-        "Desde 2025, diseño y puesta en producción de dos herramientas internas con IA construidas con Claude Code (ver Proyectos).",
+        "Coordinación de un equipo de 6 personas de Student Success y soporte: gestión del ciclo de vida del alumno, resolución de incidencias técnicas y optimización de flujos de comunicación masiva.",
+        "Desde enero de 2025, diseño y puesta en producción de dos herramientas internas con IA (ver Proyectos). Código generado con Claude Code a partir de mi diseño; integración con PostgreSQL junto al equipo de IT.",
         "En ambas herramientas, responsable del proyecto de principio a fin: detección de la necesidad y propuesta a dirección, definición de requisitos con el equipo, pruebas, despliegue, formación de usuarios y seguimiento de KPIs.",
         "Análisis de métricas de soporte en Intercom (tiempos de respuesta, NPS y calidad) para identificar cuellos de botella y proponer mejoras de producto y automatización de flujos. Informes de devoluciones y de ventas en Looker Studio durante un año, hasta sustituir los de devoluciones por el módulo de KPIs de la herramienta de reembolsos.",
       ],
       en: [
-        "Operational leadership in Student Success and support, coordinating a team of 6 people: student lifecycle management, technical issue resolution and optimization of mass-communication workflows.",
-        "Since 2025, designed and took to production two internal AI tools built with Claude Code (see Projects).",
+        "Coordinated a 6-person Student Success and support team: student lifecycle management, technical issue resolution and optimization of mass-communication workflows.",
+        "Since January 2025, designed and took to production two internal AI tools (see Projects). Code generated with Claude Code from my design; PostgreSQL integration with the IT team.",
         "For both tools, end-to-end project ownership: identifying the need and pitching it to management, defining requirements with the team, testing, deployment, user training and KPI tracking.",
         "Analysis of support metrics in Intercom (response times, NPS and quality) to identify bottlenecks and propose product improvements and workflow automation. Built refund and sales reports in Looker Studio for a year, until the refunds reporting moved to the KPI module of the refunds tool.",
-      ],
-    },
-  },
-  {
-    id: "genera-asesor",
-    company: "Genera Asesores Tributarios",
-    role: {
-      es: "Asesor Externo (colaboración puntual, en paralelo a thePower)",
-      en: "External Advisor (occasional, alongside thePower)",
-    },
-    period: {
-      es: "Mayo 2020 – Diciembre 2025",
-      en: "May 2020 – December 2025",
-    },
-    points: {
-      es: [
-        "Asesoramiento puntual en materia operativa y, más recientemente, en automatización de procesos, compaginado con la actividad principal en thePower.",
-      ],
-      en: [
-        "Occasional advisory work on operations and, more recently, on process automation, alongside the main role at thePower.",
       ],
     },
   },
@@ -111,10 +91,10 @@ export const experience: ExperienceItem[] = [
     period: { es: "2002 – 2007", en: "2002 – 2007" },
     points: {
       es: [
-        "Inició como Agente de Seguros y asumió la jefatura de un equipo comercial de 5 personas en 2004, compaginando ambas responsabilidades hasta 2007: formación, tutoría, prospección de mercado y control de objetivos por zonas geográficas.",
+        "Desde 2004, jefe de un equipo comercial de 5 personas: formación, tutoría y control de objetivos por zonas.",
       ],
       en: [
-        "Started as an Insurance Agent and took on the leadership of a 5-person sales team in 2004, combining both roles until 2007: training, mentoring, market prospecting and target management by geographic area.",
+        "From 2004, led a 5-person sales team: training, mentoring and target management by area.",
       ],
     },
   },
@@ -131,8 +111,8 @@ export const education: EducationItem[] = [
   {
     id: "lade",
     title: {
-      es: "Licenciatura en Administración y Dirección de Empresas (LADE).",
-      en: "Bachelor's Degree in Business Administration and Management (LADE).",
+      es: "Licenciatura en Administración y Dirección de Empresas (LADE) – Universidad Católica Boliviana.",
+      en: "Bachelor's Degree in Business Administration and Management – Universidad Católica Boliviana.",
     },
   },
   {
