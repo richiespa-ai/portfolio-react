@@ -34,7 +34,7 @@ export const texts: Record<Language, Texts> = {
     cvFile: "/cv/ricardo-espanol-rowe-es.pdf",
     aboutTitle: "Sobre mí",
     aboutBody:
-      "Coordiné un equipo de soporte de 6 personas en thePower y automaticé nuestra propia operación con IA. Desde enero de 2025 he diseñado y llevado a producción dos herramientas internas, en uso por los equipos de soporte y de bajas y reembolsos: un asistente que responde el 55 % de las conversaciones con alumnos y una aplicación que resuelve el 100 % de las solicitudes en 3 días como máximo. Antes, desarrollo de negocio B2B y gestión de cuentas clave en consultoría.",
+      "Profesional de operaciones de soporte y CX en transición a la automatización de procesos con IA aplicada. En thePower coordiné un equipo de soporte de 6 personas y, desde enero de 2025, diseñé y llevé a producción dos herramientas internas con IA, en uso por los equipos de soporte y de bajas y reembolsos: un asistente que responde el 55 % de las conversaciones con alumnos y una aplicación que resuelve el 100 % de las solicitudes en 3 días como máximo. Más de 20 años de cara al cliente en consultoría y seguros.",
     skillsTitle: "Habilidades",
     technologiesTitle: "Tecnologías",
     projectsTitle: "Proyectos",
@@ -59,7 +59,7 @@ export const texts: Record<Language, Texts> = {
     cvFile: "/cv/ricardo-espanol-rowe-en.pdf",
     aboutTitle: "About me",
     aboutBody:
-      "I coordinated a 6-person support team at thePower and automated our own operation with AI. Since January 2025 I have designed and taken to production two internal tools, used by the support and the withdrawals & refunds teams: an assistant that answers 55% of student conversations and an app that resolves 100% of requests within 3 days. Previously, B2B business development and key account management in consulting.",
+      "Support and CX operations professional moving into AI-driven process automation. At thePower I coordinated a 6-person support team and, since January 2025, designed and took to production two internal AI tools, used by the support and the withdrawals & refunds teams: an assistant that answers 55% of student conversations and an app that resolves 100% of requests within 3 days. 20+ years in client-facing roles in consulting and insurance.",
     skillsTitle: "Skills",
     technologiesTitle: "Technologies",
     projectsTitle: "Projects",

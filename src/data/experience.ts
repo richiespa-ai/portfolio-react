@@ -37,16 +37,16 @@ export const experience: ExperienceItem[] = [
     },
     points: {
       es: [
-        "Coordinación de las 6 personas de Student Success y soporte implicadas en los procesos que automaticé: mapeo con ellas de procesos y tareas antes de construir, ajuste de las herramientas con su feedback y formación hasta su adopción.",
+        "Coordinación de las 6 personas de Student Success y soporte implicadas en los procesos que automaticé y gestión del cambio: mapeo con ellas de procesos y tareas antes de construir, ajuste de las herramientas con su feedback y formación hasta su adopción.",
         "Desde enero de 2025, diseño y puesta en producción de dos herramientas internas con IA (ver Proyectos). Código generado con Claude Code a partir de mi diseño; integración con PostgreSQL junto al equipo de IT.",
         "En ambas herramientas, responsable del proyecto de principio a fin: detección de la necesidad y propuesta a dirección, definición de requisitos con el equipo, pruebas, despliegue, formación de usuarios y seguimiento de KPIs.",
-        "Análisis de métricas de soporte en Intercom (tiempos de respuesta, NPS y calidad) para detectar cuellos de botella. Revisión de las consultas que la IA no sabía responder para completar su base de conocimiento; workflows de enrutamiento y filtros contra correos no deseados. Informes de devoluciones y de ventas en Looker Studio durante un año, hasta sustituir los de devoluciones por el módulo de KPIs de la herramienta de reembolsos.",
+        "Análisis de métricas de Intercom (tiempos de respuesta, NPS, calidad) para detectar y resolver cuellos de botella: revisión de lo que su IA no sabía responder para completar la base de conocimiento, workflows de enrutamiento por equipo y filtros anti-spam. Informes de devoluciones y de ventas en Looker Studio durante un año, hasta sustituir los de devoluciones por el módulo de KPIs de la herramienta de reembolsos.",
       ],
       en: [
-        "Coordinated the 6 Student Success and support staff involved in the processes I automated: mapped their processes and tasks with them before building, refined the tools with their feedback and trained them through to adoption.",
+        "Coordinated the 6 Student Success and support staff involved in the processes I automated and led change management: mapped their processes and tasks with them before building, refined the tools with their feedback and trained them through to adoption.",
         "Since January 2025, designed and took to production two internal AI tools (see Projects). Code generated with Claude Code from my design; PostgreSQL integration with the IT team.",
         "For both tools, end-to-end project ownership: identifying the need and pitching it to management, defining requirements with the team, testing, deployment, user training and KPI tracking.",
-        "Analysis of support metrics in Intercom (response times, NPS and quality) to spot bottlenecks. Reviewed the queries the AI could not answer to fill gaps in its knowledge base; routing workflows and filters against unwanted emails. Built refund and sales reports in Looker Studio for a year, until the refunds reporting moved to the KPI module of the refunds tool.",
+        "Analysed Intercom metrics (response times, NPS, quality) to spot and fix bottlenecks: reviewed what its AI could not answer to fill gaps in the knowledge base, and built team-routing workflows and anti-spam filters. Built refund and sales reports in Looker Studio for a year, until the refunds reporting moved to the KPI module of the refunds tool.",
       ],
     },
   },
@@ -57,10 +57,10 @@ export const experience: ExperienceItem[] = [
     period: { es: "Enero 2019 – Mayo 2020", en: "January 2019 – May 2020" },
     points: {
       es: [
-        "Venta y gestión de cuentas clave. Definición de los objetivos de facturación y, a partir de ellos, del embudo de ventas y las acciones comerciales para cumplirlos.",
+        "Definición de los objetivos de facturación y, a partir de ellos, del embudo de ventas y las acciones comerciales para cumplirlos.",
       ],
       en: [
-        "Sold to and managed key accounts. Set the revenue targets and, from them, the sales pipeline and the commercial actions to hit them.",
+        "Set the revenue targets and, from them, the sales pipeline and the commercial actions to hit them.",
       ],
     },
   },
