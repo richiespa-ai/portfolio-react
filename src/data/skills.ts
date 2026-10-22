@@ -93,28 +93,12 @@ export const competencies: Competency[] = [
         "Gestión del ciclo de vida del alumno",
         "Resolución de incidencias complejas",
         "Optimización de flujos de soporte",
+        "Salesforce como usuario (con algo de configuración)",
       ],
       en: [
         "Student lifecycle management",
         "Complex issue resolution",
         "Support workflow optimization",
-      ],
-    },
-  },
-  {
-    id: "gestion-negocio",
-    category: { es: "Gestión de negocio", en: "Business management" },
-    items: {
-      es: [
-        "Ventas B2B",
-        "Negociación de cuentas clave",
-        "Retención y fidelización de cartera",
-        "Salesforce como usuario (con algo de configuración)",
-      ],
-      en: [
-        "B2B sales",
-        "Key account negotiation",
-        "Portfolio retention and loyalty",
         "Salesforce as a user (with some configuration)",
       ],
     },
